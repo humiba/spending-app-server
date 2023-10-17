@@ -19,7 +19,7 @@ const Category = sequelize.define(
       field: "category_name",
       unique: true,
       allowNull: false,
-    },
+    }, 
   },
   {
     tableName: "categories",
@@ -29,6 +29,6 @@ const Category = sequelize.define(
   }
 );
 
-Category.sync({ alter: true });
+Category.sync();
 
 module.exports = Category;
